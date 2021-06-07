@@ -4,6 +4,7 @@ body{
   margin: 0;
   min-width: 1076px;
   text-align: center;
+  background-color: white;
 }
 .backcolor{
   background: linear-gradient( #73BDD2, #55c4bb)
@@ -13,11 +14,13 @@ body{
 .block-haeder{
   text-align: left;
 }
+
 .menu-list  {
   list-style: none;
   display: inline-block;
   margin-bottom: 10%;
 }
+
 .menu-list li{
   display: inline;
   float: left;
@@ -25,6 +28,7 @@ body{
   padding: 0 10px;
   margin: 0px;
 }
+
   /*リンクの下線＆カラー変更用*/
 .menu-list a{
    text-decoration:none;
@@ -39,15 +43,18 @@ color:#ffffff;
 .menu-list a:hover{
   color: green;
 }
+
 /*homeのスタイル*/
 .home-box{
   display: inline-flex;
   margin-bottom: 200px;
 }
+
 .home-icon img{
   padding: 10px;
   border: 2px solid #ffffff;
 }
+
 .home-text{
   margin: 5% 100px;
   color: #ffffff;
@@ -62,13 +69,32 @@ color:#ffffff;
   letter-spacing: 2px;
 }
 
-/*myprofileデザイン*/
+/*myprofileスタイル*/
+.section1{ 
+  padding-bottom: calc(10vw + 10px);  
+    position: relative;
+    overflow: hidden;
+    background-color:fffff;}/* .section1の背景 */ 
+.section1::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 10vw solid #53BD9D;  /* 三角を白にする */ 
+  border-left: 100vw solid transparent;
+}
 .about-box{
   width: 100%;
   max-width: 348px;
   margin: 0 auto;
-  padding-bottom: 100px;
+  padding: 100px;
 }
+
+.about-box h2{
+  letter-spacing: 4px;
+  color: gray;
+}
+
 .icon-list{
   list-style: none;
   width: 100%;
@@ -79,9 +105,60 @@ color:#ffffff;
   justify-content: center;
   align-items: center;
 }
+
 .icon-list li{
   margin-right: 20px;
 }
+
 .icon-list li:last-child{
   margin-right: 0;
 }
+
+/*projectsのスタイル*/
+
+.section2{ 
+  padding-bottom: calc(10vw + 10px);  
+    position: relative;
+    overflow: hidden;
+    background-color:#53BD9D;}/* .section1の背景 */ 
+.section2::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 10vw solid #fff;  /* 三角を白にする */ 
+  border-right: 100vw solid transparent;
+}
+.works-box{
+  color:#ffffff;
+}
+
+.works-list{
+  list-style: none;
+  width: 100%;
+  max-width: 1076px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.works-list li{
+  display: inline-block;
+  width: 100%;
+  max-width: 348px;
+  text-align: left;
+}
+
+.works-list img{
+  border: 1px solid #000;
+}
+
+.works-list li .link a{
+  padding: 5px 15px;
+  margin-right: 10px;
+  font-size: 10px;
+  text-decoration: none;
+  border-style:solid ;
+}
+.works-list a:visited{
+  color:#ffffff;}
+
