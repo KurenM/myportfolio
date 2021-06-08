@@ -74,15 +74,16 @@ color:#ffffff;
   padding-bottom: calc(10vw + 10px);  
     position: relative;
     overflow: hidden;
-    background-color:fffff;}/* .section1の背景 */ 
+    background-color:#ffffff;}/* .section1の背景 */ 
 .section1::before {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
-  border-bottom: 10vw solid #53BD9D;  /* 三角を白にする */ 
-  border-left: 100vw solid transparent;
+  border-bottom: 50vw solid #53BD9D;  /* 三角を白にする */ 
+  border-left: 1000vw solid transparent;
 }
+
 .about-box{
   width: 100%;
   max-width: 348px;
@@ -121,14 +122,16 @@ color:#ffffff;
     position: relative;
     overflow: hidden;
     background-color:#53BD9D;}/* .section1の背景 */ 
+
 .section2::before {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
-  border-bottom: 10vw solid #fff;  /* 三角を白にする */ 
+  border-bottom: 15vw solid #fff;  /* 三角を白にする */ 
   border-right: 100vw solid transparent;
 }
+
 .works-box{
   color:#ffffff;
 }
@@ -137,7 +140,7 @@ color:#ffffff;
   list-style: none;
   width: 100%;
   max-width: 1076px;
-  margin: 30px auto;
+  margin: 100px auto;
   text-align: center;
 }
 
@@ -162,3 +165,40 @@ color:#ffffff;
 .works-list a:visited{
   color:#ffffff;}
 
+/*Contactのスタイル*/
+.contco-box{
+  color: gray;
+}
+.contct-list{
+  list-style: none;
+  width: 100%;
+  max-width: 1076px;
+  margin: 100px auto;
+  text-align: center;
+}
+.contct-list li{
+  display: inline-block;
+  width: 100%;
+  max-width: 348px;
+  text-align: center;
+}
+.contct-list li{
+    padding:  30px 0px;
+    margin: 0px 30px;
+    background: #f4f4f4;
+    border-top: solid 6px #53BD9D;
+}
+.text{
+  display:inline-block;
+  border-bottom: 3px solid  gray;
+}
+
+/*footerのスタイル*/
+.footer-box{
+  color: gray;
+  background-color:#f4f4f4;
+}
+.footer-box p{
+  font-size: 10px;
+  font-weight: initial;
+}
