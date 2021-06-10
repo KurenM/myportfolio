@@ -2,7 +2,7 @@
 body{
   font-family: "Note Sans JP","sans-serif";
   margin: 0;
-  min-width: 1076px;
+  min-width: 1000px;
   text-align: center;
   background-color: white;
 }
@@ -46,22 +46,25 @@ color:#ffffff;
 
 /*homeのスタイル*/
 .home-box{
-  display: inline-flex;
+  display: flex;
   margin-bottom: 200px;
+  width: 100%;
+  justify-content: center;
 }
 
 .home-icon img{
+  width: 300px ;
   padding: 10px;
   border: 2px solid #ffffff;
 }
 
 .home-text{
-  margin: 5% 100px;
+  margin: 100px 100px;
   color: #ffffff;
 }
 
 .home-text H1{
-  border-bottom: solid #6aedc8;
+  border-bottom: 3px solid #6aedc8;
   font-weight: normal;
   letter-spacing: 5px;
 }
@@ -95,6 +98,9 @@ color:#ffffff;
   letter-spacing: 4px;
   color: gray;
 }
+.about-box img{
+  width: 300px;
+}
 
 .icon-list{
   list-style: none;
@@ -115,6 +121,10 @@ color:#ffffff;
   margin-right: 0;
 }
 
+.icon-list img{
+  width: 30px;
+}
+
 /*projectsのスタイル*/
 
 .section2{ 
@@ -128,27 +138,35 @@ color:#ffffff;
   position: absolute;
   bottom: 0;
   left: 0;
-  border-bottom: 15vw solid #fff;  /* 三角を白にする */ 
-  border-right: 100vw solid transparent;
+  border-bottom: 20vw solid #fff;  /* 三角を白にする */ 
+  border-right: 150vw solid transparent;
 }
 
 .works-box{
   color:#ffffff;
+}
+.works-box img{
+  width: 300px;
 }
 
 .works-list{
   list-style: none;
   width: 100%;
   max-width: 1076px;
-  margin: 100px auto;
+  margin: 200px auto;
   text-align: center;
 }
+
 
 .works-list li{
   display: inline-block;
   width: 100%;
   max-width: 348px;
   text-align: left;
+  margin-right:100px
+}
+.works-list li:last-child{
+  margin-right: 0;
 }
 
 .works-list img{
@@ -166,21 +184,27 @@ color:#ffffff;
   color:#ffffff;}
 
 /*Contactのスタイル*/
-.contco-box{
+.contct-box{
   color: gray;
+}
+.contct-box img{
+  width: 300px;
 }
 .contct-list{
   list-style: none;
   width: 100%;
   max-width: 1076px;
   margin: 100px auto;
+  padding-left: 0;
   text-align: center;
+}
+.contct-list img{
+  width: 50px;
 }
 .contct-list li{
   display: inline-block;
   width: 100%;
   max-width: 348px;
-  text-align: center;
 }
 .contct-list li{
     padding:  30px 0px;
@@ -188,6 +212,7 @@ color:#ffffff;
     background: #f4f4f4;
     border-top: solid 6px #53BD9D;
 }
+
 .text{
   display:inline-block;
   border-bottom: 3px solid  gray;
@@ -201,4 +226,104 @@ color:#ffffff;
 .footer-box p{
   font-size: 10px;
   font-weight: initial;
+}
+
+
+/*レスポンシブスマホ*/
+@media screen  and (max-width: 768px){
+/*幅合わせ*/
+  body{
+  max-width: 100%;
+}
+.home-box{
+  max-width: 100%;
+}
+.home-icon img{
+  max-width: 100%;
+}
+.about-box .about-box img{
+  max-width: 100%;
+}
+.icon-list .icon-list img{
+  max-width: 100%;
+}
+.works-box img{
+  max-width: 100%;
+}
+.works-list .works-list li{
+  max-width: 100%;
+}
+.contct-box img{
+  max-width: 100%;
+}
+.contct-list .contct-list img .contct-list li{
+  max-width: 100%;
+}
+
+/*homecss*/
+.home-box{
+  display: block;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+}
+.home-icon img{
+  width: 500px ;
+}
+.home-text H1{
+  font-size: 80px;
+}
+.home-text p{
+  font-size: 50px;
+  letter-spacing: 3px;
+  font-weight: lighter;
+}
+
+/*aboutcss*/
+.about-box{
+  padding: 0;
+  font-size: 30px;
+  max-width: 100%;
+}
+.about-box img{
+  width: 300px;
+}
+.icon-list li{
+  margin-right: 50px;
+  margin-bottom: 100px;
+}
+.icon-list img{
+  width: 60px;
+}
+.section1::before {
+  border-bottom: 200vw solid #53BD9D;
+}
+
+/*projectcss*/
+.section2::before {
+  border-bottom: 20vw solid #fff;
+}
+.works-box img{
+  width: 300px;
+}
+.works-list li{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+.works-list li:last-child{
+  margin-right: auto;
+}
+
+.works-list li .link a{
+  padding: 10px 30px;
+  margin-right: 30px;
+  font-size: 15px;
+}
+
+
+
+
+
+
 }
