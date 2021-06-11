@@ -305,11 +305,17 @@ color:#ffffff;
 .works-box img{
   width: 300px;
 }
+.works-box h2{
+  font-size: 50px;
+}
+.works-list {
+  margin: 0;
+}
 .works-list li{
   display: block;
   width: 100%;
-  margin: 0 auto;
-  padding: 100px;
+  margin: auto;
+  padding: 50px;
 }
 .works-list li:last-child{
   margin-right: auto;
@@ -321,9 +327,21 @@ color:#ffffff;
   font-size: 15px;
 }
 
+/*contctcss*/
+.contct-box h2{
+  font-size: 50px;
+}
 
+.contct-list li{
+  display: block;
+  margin: 0 auto;
+  padding: 50px auto;
+}
+.contct-list li{
+  margin-top: 100px;
+}
 
-
+*/
 
 
 }
