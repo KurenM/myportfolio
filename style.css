@@ -153,13 +153,17 @@ color:#ffffff;
   list-style: none;
   width: 100%;
   max-width: 1076px;
-  margin: 200px;
+  margin: 10px 10% 200px 10%;
   text-align: center;
+  display: flex;
+    align-items: flex-start;
+    flex-direction: row;
 }
 
 
 .works-list li{
   display: inline-block;
+  padding: 20px;
   width: 100%;
   max-width: 348px;
   text-align: left;
